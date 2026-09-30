@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Díaz De Salud - Enfermería a Domicilio</title>
+    <!-- Carga de fuentes Alex Brush y Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Franja Superior -->
+    <header class="header-container">
+        <!-- Izquierda: Nombre -->
+        <div class="header-col col-left">
+            <h1 class="brand-title">Díaz De Salud</h1>
+            <p class="brand-subtitle">Enfermería a Domicilio</p>
+        </div>
+
+        <!-- Centro: Logo del Corazón -->
+        <div class="header-col col-center">
+            <img src="imagen/imagen1.jpg" alt="Logo Díaz De Salud" class="logo-heart">
+        </div>
+
+        <!-- Derecha: Eslogan -->
+        <div class="header-col col-right">
+            <p class="brand-slogan">Cuidado experto…<br>Con calidez humana</p>
+        </div>
+    </header>
+
+    <!-- Menú Inferior -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="nosotros.html">Acerca de nosotros</a></li>
+            <li><a href="servicios.html">Nuestros servicios</a></li>
+            <li><a href="contactanos.html">Contáctanos y síguenos</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL DE INICIO -->
+    <main>
+        <!-- BANNER PRINCIPAL (HERO) CON TU IMAGEN -->
+        <section class="hero-section">
+            <div class="hero-image-container">
+                <img src="imagen/imagen4.jpg" alt="Díaz De Salud - Enfermería a domicilio" class="hero-img">
+            </div>
+            <div class="hero-buttons">
+                <!-- Botón de WhatsApp (Abre ventana flotante) -->
+                <button type="button" class="btn btn-whatsapp" id="openWsModal">
+                    Solicitar Atención por WhatsApp
+                </button>
+                
+                <!-- Botón hacia Nuestros Servicios -->
+                <a href="servicios.html" class="btn btn-secondary">
+                   📋 Ver Servicios
+                </a>
+            </div>
+        </section>
+
+        <!-- POR QUÉ ELEGIRNOS -->
+        <section class="features-section">
+            <div class="section-container">
+                <h2 class="section-title">¿Por qué confiar en Díaz De Salud?</h2>
+                <div class="features-grid">
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Personal Certificado</h3>
+                        <p>Enfermeros profesionales capacitados para atender cualquier requerimiento con total seguridad y rigor médico.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">❤️️</div>
+                        <h3>Calidez Humana</h3>
+                        <p>Tratamos a cada paciente con la paciencia, el respeto y la empatía que se merece en todo momento.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⏰</div>
+                        <h3>Disponibilidad y Rapidez</h3>
+                        <p>Respuestas rápidas y horarios adaptados a las necesidades y urgencias de tu familia.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- RESUMEN DE SERVICIOS -->
+        <section class="services-preview-section">
+            <div class="section-container">
+                <h2 class="section-title">Nuestros Servicios Principales</h2>
+                <p class="section-subtitle">Atención de enfermería diseñada a la medida de tu ser querido.</p>
+                
+                <div class="services-grid">
+                    
+                    <div class="service-card">
+                        <div class="service-icon">👵🏽</div>
+                        <h3>Cuidado del Adulto Mayor</h3>
+                        <p>Asistencia diaria integral, control de signos vitales, administración puntual de medicamentos y compañía constante.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🩹</div>
+                        <h3>Curaciones y Procedimientos</h3>
+                        <p>Tratamiento especializado de heridas, cura de escaras, cuidados postoperatorios y manejo de sondas.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">💉</div>
+                        <h3>Inyectables y Sueros</h3>
+                        <p>Aplicación de medicamentos endovenosos, intramusculares y colocación de sueros con estricta higiene.</p>
+                    </div>
+
+                </div>
+
+                <div class="center-action">
+                    <a href="servicios.html" class="btn btn-primary">Ver Todos los Servicios</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS (CARRUSEL) -->
+        <section class="testimonials-section">
+            <div class="section-container">
+                <h2 class="section-title">Lo que dicen las familias</h2>
+                <p class="section-subtitle">La tranquilidad y salud de tu hogar es nuestra mayor satisfacción.</p>
+
+                <div class="carousel-container">
+                    <button class="carousel-btn prev-btn" id="prevBtn">❮</button>
+
+                    <div class="carousel-track-container">
+                        <div class="carousel-track" id="carouselTrack">
+                            
+                            <!-- Testimonio 1 -->
+                            <div class="testimonial-card">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">"Excelente servicio y trato humano. El equipo de Díaz De Salud cuidó a nuestro familiar con un profesionalismo y cariño impecables. Nos dieron la tranquilidad que tanto necesitábamos en momentos difíciles."</p>
+                                <h4 class="testimonial-author">— Familia Lastarria</h4>
+                            </div>
+
+                            <!-- Testimonio 2 -->
+                            <div class="testimonial-card">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">"Estamos muy agradecidos con Díaz de Salud por el cuidado y la dedicación que brindaron a nuestro familiar. El personal fue muy atento, responsable y cariñoso en todo momento. Saber que estaba en buenas manos nos dio mucha tranquilidad."</p>
+                                <h4 class="testimonial-author">— Familia Ocharan</h4>
+                            </div>
+
+                            <!-- Testimonio 3 -->
+                            <div class="testimonial-card">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">"Una experiencia muy satisfactoria. Desde el primer contacto recibimos una atención amable y profesional. El equipo de Díaz de Salud estuvo pendiente de cada detalle y trató a nuestro familiar con mucho respeto y calidez."</p>
+                                <h4 class="testimonial-author">— Familia Rodríguez</h4>
+                            </div>
+
+                            <!-- Testimonio 4 -->
+                            <div class="testimonial-card">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">"Agradecemos profundamente el acompañamiento y cuidado que recibimos. Encontramos profesionales comprometidos, humanos y siempre dispuestos a ayudar. Para nuestra familia fue muy importante sentirnos acompañados y seguros."</p>
+                                <h4 class="testimonial-author">— Familia Flores</h4>
+                            </div>
+
+                            <!-- Testimonio 5 -->
+                            <div class="testimonial-card">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">"Excelente atención y mucho compromiso. El personal demostró paciencia, responsabilidad y un trato muy humano con nuestro familiar. Estamos muy agradecidos por la tranquilidad que nos brindaron durante todo el proceso."</p>
+                                <h4 class="testimonial-author">— Familia del Carpio</h4>
+                            </div>
+
+                            <!-- Testimonio 6 -->
+                            <div class="testimonial-card">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">"Nos sentimos muy tranquilos al contar con el equipo de Díaz de Salud. Recibimos un servicio profesional, cercano y lleno de empatía. Gracias por cuidar a nuestro familiar con tanta dedicación y cariño."</p>
+                                <h4 class="testimonial-author">— Familia Orta</h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn next-btn" id="nextBtn">❯</button>
+                </div>
+
+                <!-- Indicadores de puntos (Dots) -->
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="cta-section">
+            <div class="section-container">
+                <h2>¿Necesitas atención de enfermería hoy mismo?</h2>
+                <p>Escríbenos directamente para coordinar la visita de un profesional a tu domicilio.</p>
+                <button type="button" class="btn btn-whatsapp" id="openWsModalCta">
+                    Contactar por WhatsApp Ahora
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- VENTANA MODAL SELECCIÓN DE WHATSAPP -->
+    <div class="ws-modal-overlay" id="wsModal">
+        <div class="ws-modal-card">
+            <button class="ws-modal-close" id="closeWsModal">&times;</button>
+            <h3 class="ws-modal-title">Selecciona una línea de atención</h3>
+            <p class="ws-modal-sub">Estamos listos para atenderte por cualquiera de nuestros WhatsApps:</p>
+            
+            <div class="ws-modal-options">
+                <a href="https://wa.me/51926476784?text=Hola,%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20enfermer%C3%ADa." 
+                   target="_blank" 
+                   class="ws-option-btn">
+                   📞 926476784
+                </a>
+                <a href="https://wa.me/51933791007?text=Hola,%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20enfermer%C3%ADa." 
+                   target="_blank" 
+                   class="ws-option-btn">
+                   📞 933791007
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer-container">
+        <p>&copy; 2026 Díaz De Salud - Enfermería a Domicilio. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JS DEL CARRUSEL Y MODAL -->
+    <script src="script.js"></script>
+</body>
+</html>

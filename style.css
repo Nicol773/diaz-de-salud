@@ -1,0 +1,1199 @@
+/* ==========================================
+   1. RESET Y CONFIGURACIÓN GENERAL
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f3e8;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Evita que la pantalla se mueva a los lados en celular */
+}
+
+/* ==========================================
+   2. ENCABEZADO Y FRANJA SUPERIOR
+   ========================================== */
+.header-container {
+    width: 100%;
+    min-height: 180px;
+    background-color: #f7f3e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.col-left {
+    text-align: right;
+    flex: 1;
+}
+
+.col-center {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.col-right {
+    text-align: left;
+    flex: 1;
+}
+
+.logo-heart {
+    height: 140px;
+    width: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.brand-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3b2818;
+    line-height: 1;
+}
+
+.brand-subtitle {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4a3422;
+    margin-top: 6px;
+}
+
+.brand-slogan {
+    font-family: 'Alex Brush', cursive;
+    font-size: 2.8rem;
+    color: #3b2818;
+    line-height: 1.1;
+}
+
+/* ==========================================
+   3. MENÚ DE NAVEGACIÓN
+   ========================================== */
+.navbar {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 12px 10px;
+    border-top: 1px solid #e5e0d8;
+    border-bottom: 1px solid #e5e0d8;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #5c4e43;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #3b2818;
+    font-weight: bold;
+}
+
+/* ==========================================
+   4. SECCIÓN PRINCIPAL (MAIN GENERAL)
+   ========================================== */
+main {
+    background-color: #f7f3e8;
+}
+
+.section-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    text-align: center;
+    color: #3b2818;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #665A58;
+    margin-bottom: 30px;
+}
+
+/* Hero con Imagen Destacada */
+.hero-section {
+    background-color: #f7f3e8;
+    padding: 20px 20px 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e5e0d8;
+}
+
+.hero-image-container {
+    max-width: 1100px;
+    margin: 0 auto 25px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* ESTILOS DE BOTONES */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-whatsapp, 
+.btn-secondary, 
+.btn-primary {
+    background-color: #3b2818;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 12px rgba(59, 40, 24, 0.2);
+}
+
+.btn-whatsapp:hover, 
+.btn-secondary:hover, 
+.btn-primary:hover {
+    background-color: #261b13;
+    transform: translateY(-2px);
+}
+
+/* Por qué elegirnos */
+.features-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feature-card {
+    background-color: #f7f3e8;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e5e0d8;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.feature-card h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #3b2818;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    color: #665a58;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Resumen de Servicios */
+.services-preview-section {
+    padding: 50px 0;
+    background-color: #f7f3e8;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e0d8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.service-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.service-card h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #3b2818;
+    margin-bottom: 8px;
+}
+
+.service-card p {
+    color: #665a58;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.center-action {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ==========================================
+   5. CARRUSELES (TESTIMONIOS Y GALERÍA)
+   ========================================== */
+.testimonials-section,
+.gallery-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e0d8;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-section .carousel-container {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.testimonial-card {
+    min-width: 100%;
+    box-sizing: border-box;
+    background-color: #f7f3e8;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e5e0d8;
+}
+
+.stars {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #4a3422;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.testimonial-author {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #3b2818;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.gallery-card {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #f7f3e8;
+    border: 1px solid #e5e0d8;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(59, 40, 24, 0.95) 100%);
+    color: #ffffff;
+    padding: 20px 15px 12px 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.carousel-btn {
+    background-color: #3b2818;
+    color: #ffffff;
+    border: none;
+    font-size: 1.1rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.prev-btn { margin-right: 10px; }
+.next-btn { margin-left: 10px; }
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #e5e0d8;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #3b2818;
+}
+
+/* ==========================================
+   6. SECCIÓN ACERCA DE NOSOTROS
+   ========================================== */
+.about-hero-section {
+    padding: 50px 0;
+    background-color: #f7f3e8;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.about-image-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border: 1px solid #e5e0d8;
+    background-color: #ffffff;
+}
+
+.lic-profile-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+.lic-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(59, 40, 24, 0.95) 100%);
+    color: #ffffff;
+    padding: 20px 15px 12px 15px;
+    text-align: center;
+}
+
+.lic-badge h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.lic-badge p {
+    font-size: 0.8rem;
+    color: #e5e0d8;
+}
+
+.sub-tagline {
+    display: block;
+    color: #4a3422;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.about-text-content h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.8rem;
+    color: #3b2818;
+    line-height: 1.25;
+    margin-bottom: 15px;
+}
+
+.about-text-content p {
+    color: #5c4e43;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 12px;
+}
+
+.values-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e0d8;
+    border-bottom: 1px solid #e5e0d8;
+}
+
+/* ==========================================
+   7. VENTANA MODAL SELECCIÓN WHATSAPP
+   ========================================== */
+.ws-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.ws-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ws-modal-card {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 16px;
+    max-width: 380px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.ws-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    color: #665a58;
+    cursor: pointer;
+}
+
+.ws-modal-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #3b2818;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.ws-modal-sub {
+    color: #665a58;
+    font-size: 0.85rem;
+    margin-bottom: 18px;
+}
+
+.ws-modal-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ws-option-btn {
+    background-color: #f7f3e8;
+    color: #3b2818;
+    border: 1px solid #e5e0d8;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.ws-option-btn:hover {
+    background-color: #3b2818;
+    color: #ffffff;
+}
+
+/* ==========================================
+   8. LLAMADO A LA ACCIÓN (CTA FINAL) Y FOOTER
+   ========================================== */
+.cta-section {
+    background-color: #efe5d8;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #e5e0d8;
+}
+
+.cta-section h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #3b2818;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+.cta-section p {
+    color: #5c4e43;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.footer-container {
+    background-color: #3b2818;
+    color: #f7f3e8;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+}
+
+/* ==========================================
+   📱 9. REGLAS RESPONSIVAS PARA CELULAR Y TABLET
+   ========================================== */
+@media (max-width: 768px) {
+    /* Header verticalizado para celular */
+    .header-container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 10px;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .col-left, .col-right {
+        text-align: center;
+        width: 100%;
+    }
+
+    .col-center {
+        order: -1; /* Pone el logo del corazón hasta arriba de todo */
+        margin-bottom: 5px;
+    }
+
+    .logo-heart {
+        height: 90px;
+    }
+
+    .brand-title {
+        font-size: 2.2rem;
+    }
+
+    .brand-subtitle {
+        font-size: 1.1rem;
+        margin-top: 2px;
+    }
+
+    .brand-slogan {
+        font-size: 2rem;
+    }
+
+    /* Menú adaptado */
+    .navbar {
+        padding: 10px 5px;
+    }
+
+    .navbar ul {
+        gap: 12px 18px;
+    }
+
+    .navbar a {
+        font-size: 0.88rem;
+    }
+
+    /* Ajustes generales */
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lic-profile-img {
+        height: 380px;
+    }
+
+    .gallery-section .carousel-container {
+        max-width: 100%;
+    }
+
+    .gallery-card img {
+        height: 400px;
+    }
+
+    .carousel-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+}
+/* ==========================================
+   1. RESET Y CONFIGURACIÓN GENERAL
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f3e8;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* ==========================================
+   2. ENCABEZADO Y FRANJA SUPERIOR
+   ========================================== */
+.header-container {
+    width: 100%;
+    min-height: 180px;
+    background-color: #f7f3e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.col-left { text-align: right; flex: 1; }
+.col-center { text-align: center; padding: 0 15px; }
+.col-right { text-align: left; flex: 1; }
+
+.logo-heart {
+    height: 140px;
+    width: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.brand-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3b2818;
+    line-height: 1;
+}
+
+.brand-subtitle {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4a3422;
+    margin-top: 6px;
+}
+
+.brand-slogan {
+    font-family: 'Alex Brush', cursive;
+    font-size: 2.8rem;
+    color: #3b2818;
+    line-height: 1.1;
+}
+
+/* ==========================================
+   3. MENÚ DE NAVEGACIÓN
+   ========================================== */
+.navbar {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 12px 10px;
+    border-top: 1px solid #e5e0d8;
+    border-bottom: 1px solid #e5e0d8;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #5c4e43;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #3b2818;
+    font-weight: bold;
+}
+
+/* ==========================================
+   4. SECCIÓN PRINCIPAL GENERAL Y BOTONES
+   ========================================== */
+main {
+    background-color: #f7f3e8;
+}
+
+.section-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-whatsapp, 
+.btn-secondary, 
+.btn-primary {
+    background-color: #3b2818;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 12px rgba(59, 40, 24, 0.2);
+}
+
+.btn-whatsapp:hover, 
+.btn-secondary:hover, 
+.btn-primary:hover {
+    background-color: #261b13;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   5. ESTILOS PÁGINA NUESTROS SERVICIOS
+   ========================================== */
+.services-header-section {
+    padding: 40px 20px 25px 20px;
+    text-align: center;
+    background-color: #f7f3e8;
+}
+
+.sub-tagline {
+    display: block;
+    color: #4a3422;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.services-main-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.2rem;
+    color: #3b2818;
+    margin-bottom: 12px;
+}
+
+.services-main-desc {
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    color: #5c4e43;
+    font-size: 1rem;
+    line-height: 1.55;
+}
+
+.search-box-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.search-box-container input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    border: 1px solid #e5e0d8;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 0 4px 12px rgba(59, 40, 24, 0.05);
+    background-color: #ffffff;
+    color: #3b2818;
+}
+
+.full-services-section {
+    padding: 40px 0 60px 0;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e0d8;
+}
+
+.services-detailed-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+}
+
+.service-detail-card {
+    background-color: #f7f3e8;
+    border: 1px solid #e5e0d8;
+    border-radius: 14px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-detail-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(59, 40, 24, 0.08);
+}
+
+.service-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.service-card-icon {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.service-card-header h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #3b2818;
+    font-size: 1.15rem;
+    line-height: 1.3;
+}
+
+.service-card-text {
+    color: #5c4e43;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.service-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 0.88rem;
+    padding: 10px 14px;
+}
+
+.no-results-msg {
+    text-align: center;
+    padding: 40px 20px;
+    color: #5c4e43;
+}
+
+/* ==========================================
+   6. ESTILOS PÁGINA CONTÁCTANOS Y REDES
+   ========================================== */
+.contact-header-section {
+    padding: 40px 20px 25px 20px;
+    text-align: center;
+    background-color: #f7f3e8;
+}
+
+.contact-main-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.2rem;
+    color: #3b2818;
+    margin-bottom: 12px;
+}
+
+.contact-main-desc {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #5c4e43;
+    font-size: 1rem;
+    line-height: 1.55;
+}
+
+.contact-content-section {
+    padding: 40px 0 60px 0;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e0d8;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.contact-info-card, 
+.social-section-card {
+    background-color: #f7f3e8;
+    border: 1px solid #e5e0d8;
+    border-radius: 16px;
+    padding: 30px 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.contact-info-card h2, 
+.social-section-card h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #3b2818;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.contact-info-desc, 
+.social-section-desc {
+    color: #5c4e43;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin-bottom: 22px;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.method-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #e5e0d8;
+}
+
+.method-icon {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.method-details h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #3b2818;
+    font-size: 1.05rem;
+    margin-bottom: 3px;
+}
+
+.method-details p {
+    color: #5c4e43;
+    font-size: 0.88rem;
+    margin-bottom: 6px;
+}
+
+.method-btn {
+    font-size: 0.82rem;
+    padding: 8px 14px;
+    margin-top: 4px;
+}
+
+.social-links-grid-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 15px 18px;
+    border-radius: 12px;
+    border: 1px solid #e5e0d8;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(59, 40, 24, 0.12);
+    background-color: #3b2818;
+    border-color: #3b2818;
+}
+
+.social-card:hover .social-text h3,
+.social-card:hover .social-text p {
+    color: #ffffff;
+}
+
+.social-icon {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.social-text h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #3b2818;
+    font-size: 1.05rem;
+    margin-bottom: 2px;
+    transition: color 0.3s ease;
+}
+
+.social-text p {
+    color: #665a58;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+}
+
+/* ==========================================
+   7. MODAL Y FOOTER
+   ========================================== */
+.ws-modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 1000; opacity: 0; visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.ws-modal-overlay.active { opacity: 1; visibility: visible; }
+
+.ws-modal-card {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 16px;
+    max-width: 380px; width: 90%;
+    text-align: center; position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.ws-modal-close {
+    position: absolute; top: 10px; right: 15px;
+    background: none; border: none;
+    font-size: 1.6rem; color: #665a58; cursor: pointer;
+}
+
+.ws-modal-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #3b2818; font-size: 1.3rem; margin-bottom: 8px;
+}
+
+.ws-modal-sub { color: #665a58; font-size: 0.85rem; margin-bottom: 18px; }
+
+.ws-modal-options { display: flex; flex-direction: column; gap: 10px; }
+
+.ws-option-btn {
+    background-color: #f7f3e8; color: #3b2818;
+    border: 1px solid #e5e0d8; padding: 12px;
+    border-radius: 10px; text-decoration: none;
+    font-weight: bold; font-size: 0.9rem;
+}
+
+.ws-option-btn:hover { background-color: #3b2818; color: #ffffff; }
+
+.cta-section {
+    background-color: #efe5d8;
+    padding: 40px 20px; text-align: center;
+    border-top: 1px solid #e5e0d8;
+}
+
+.cta-section h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #3b2818; margin-bottom: 10px; font-size: 1.6rem;
+}
+
+.cta-section p { color: #5c4e43; margin-bottom: 20px; font-size: 0.95rem; }
+
+.footer-container {
+    background-color: #3b2818; color: #f7f3e8;
+    text-align: center; padding: 20px; font-size: 0.85rem;
+}
+
+/* ==========================================
+   8. RESPONSIVO PARA CELULAR Y TABLET
+   ========================================== */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 10px;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .col-left, .col-right { text-align: center; width: 100%; }
+    .col-center { order: -1; margin-bottom: 5px; }
+
+    .logo-heart { height: 90px; }
+    .brand-title { font-size: 2.2rem; }
+    .brand-subtitle { font-size: 1.1rem; }
+    .brand-slogan { font-size: 2rem; }
+
+    .navbar ul { gap: 10px 15px; }
+    .navbar a { font-size: 0.88rem; }
+
+    .contact-grid { grid-template-columns: 1fr; }
+}

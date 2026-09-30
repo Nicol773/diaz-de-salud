@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - Díaz De Salud</title>
+    <!-- Carga de fuentes Alex Brush y Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Franja Superior -->
+    <header class="header-container">
+        <div class="header-col col-left">
+            <h1 class="brand-title">Díaz De Salud</h1>
+            <p class="brand-subtitle">Enfermería a Domicilio</p>
+        </div>
+        <div class="header-col col-center">
+            <img src="imagen/imagen1.jpg" alt="Logo Díaz De Salud" class="logo-heart">
+        </div>
+        <div class="header-col col-right">
+            <p class="brand-slogan">Cuidado experto…<br>Con calidez humana</p>
+        </div>
+    </header>
+
+    <!-- Menú Inferior -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Acerca de nosotros</a></li>
+            <li><a href="servicios.html">Nuestros servicios</a></li>
+            <li><a href="contactanos.html" class="active">Contáctanos y síguenos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- CABECERA DE CONTACTO -->
+        <section class="contact-header-section">
+            <div class="section-container">
+                <span class="sub-tagline">Estamos para ayudarte</span>
+                <h1 class="contact-main-title">Ponte en Contacto con Nosotros</h1>
+                <p class="contact-main-desc">
+                    ¿Tienes dudas sobre nuestros servicios o deseas coordinar una atención de enfermería a domicilio? Escríbenos o conéctate con nosotros en nuestras redes sociales.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PRINCIPAL: DOS COLUMNAS -->
+        <section class="contact-content-section">
+            <div class="section-container">
+                <div class="contact-grid">
+
+                    <!-- Columna Izquierda: Canales Directos -->
+                    <div class="contact-info-card">
+                        <h2>Atención Inmediata</h2>
+                        <p class="contact-info-desc">Te respondemos a la brevedad para asesorarte y coordinar la mejor atención para tu familiar.</p>
+
+                        <div class="contact-methods">
+                            <div class="method-item">
+                                <span class="method-icon">💬</span>
+                                <div class="method-details">
+                                    <h3>WhatsApp Directo</h3>
+                                    <p>Atención rápida y personalizada.</p>
+                                    <button type="button" class="btn btn-whatsapp method-btn" id="openWsModal">
+                                        Enviar un WhatsApp
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <span class="method-icon">⏰</span>
+                                <div class="method-details">
+                                    <h3>Horario de Atención</h3>
+                                    <p>Disponible 24/7 para emergencias y coordinaciones de enfermería.</p>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <span class="method-icon">📍</span>
+                                <div class="method-details">
+                                    <h3>Cobertura</h3>
+                                    <p>Atención de enfermería a domicilio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna Derecha: Redes Sociales -->
+                    <div class="social-section-card">
+                        <h2>Síguenos en Redes Sociales</h2>
+                        <p class="social-section-desc">Conoce nuestro trabajo diario, consejos de salud y videos en nuestras comunidades digitales:</p>
+
+                        <div class="social-links-grid-3">
+                            
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/share/1FSG6g7A3p/" target="_blank" class="social-card facebook">
+                                <span class="social-icon">📘</span>
+                                <div class="social-text">
+                                    <h3>Facebook</h3>
+                                    <p>Díaz De Salud</p>
+                                </div>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/diaz_de_salud?stkn=MWpzaWEya2Z0dGp3eg==" target="_blank" class="social-card instagram">
+                                <span class="social-icon">📸</span>
+                                <div class="social-text">
+                                    <h3>Instagram</h3>
+                                    <p>@diaz_de_salud</p>
+                                </div>
+                            </a>
+
+                            <!-- TikTok -->
+                            <a href="https://www.tiktok.com/@diaz_de_salud?_r=1&_t=ZS-9A9XBsRQfKu" target="_blank" class="social-card tiktok">
+                                <span class="social-icon">🎵</span>
+                                <div class="social-text">
+                                    <h3>TikTok</h3>
+                                    <p>@diaz_de_salud</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="cta-section">
+            <div class="section-container">
+                <h2>¿Tienes una consulta específica?</h2>
+                <p>Escríbenos por WhatsApp y el equipo te responderá de inmediato.</p>
+                <button type="button" class="btn btn-whatsapp" id="openWsModalCta">
+                    Hablar por WhatsApp Ahora
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- VENTANA MODAL SELECCIÓN DE WHATSAPP -->
+    <div class="ws-modal-overlay" id="wsModal">
+        <div class="ws-modal-card">
+            <button class="ws-modal-close" id="closeWsModal">&times;</button>
+            <h3 class="ws-modal-title">Selecciona un canal de atención</h3>
+            <p class="ws-modal-sub">Estamos listos para atenderte por cualquiera de nuestras líneas:</p>
+            
+            <div class="ws-modal-options">
+                <a href="https://wa.me/51926476784?text=Hola,%20quisiera%20consultar%20sobre%20sus%20servicios%20de%20enfermer%C3%ADa." 
+                   target="_blank" 
+                   class="ws-option-btn">
+                   💬 926 476 784
+                </a>
+                <a href="https://wa.me/51933791007?text=Hola,%20quisiera%20solicitar%20coordinaci%C3%B3n%20de%20servicios." 
+                   target="_blank" 
+                   class="ws-option-btn">
+                   💬 933 791 007
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer-container">
+        <p>&copy; 2026 Díaz De Salud - Enfermería a Domicilio. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JS Y MODAL -->
+    <script src="script.js"></script>
+</body>
+</html>

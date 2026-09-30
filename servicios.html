@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Servicios - Díaz De Salud</title>
+    <!-- Carga de fuentes Alex Brush y Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Franja Superior -->
+    <header class="header-container">
+        <div class="header-col col-left">
+            <h1 class="brand-title">Díaz De Salud</h1>
+            <p class="brand-subtitle">Enfermería a Domicilio</p>
+        </div>
+        <div class="header-col col-center">
+            <img src="imagen/imagen1.jpg" alt="Logo Díaz De Salud" class="logo-heart">
+        </div>
+        <div class="header-col col-right">
+            <p class="brand-slogan">Cuidado experto…<br>Con calidez humana</p>
+        </div>
+    </header>
+
+    <!-- Menú Inferior -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Acerca de nosotros</a></li>
+            <li><a href="servicios.html" class="active">Nuestros servicios</a></li>
+            <li><a href="contactanos.html">Contáctanos y Síguenos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- CABECERA Y BUSCADOR -->
+        <section class="services-header-section">
+            <div class="section-container">
+                <span class="sub-tagline">Atención Integral a Domicilio</span>
+                <h1 class="services-main-title">Nuestros Servicios de Enfermería</h1>
+                <p class="services-main-desc">
+                    Ofrecemos cuidados profesionales de salud adaptados a las necesidades específicas de tu familia en la tranquilidad de tu hogar.
+                </p>
+
+                <!-- Buscador Interactivo -->
+                <div class="search-box-container">
+                    <input type="text" id="serviceSearchInput" placeholder="🔍 Buscar servicio (ej. inyectables, adulto mayor, sondas)...">
+                </div>
+            </div>
+        </section>
+
+        <!-- GRILLA COMPLETA DE SERVICIOS -->
+        <section class="full-services-section">
+            <div class="section-container">
+                <div class="services-detailed-grid" id="servicesGrid">
+
+                    <!-- 1. Cuidado del Adulto Mayor -->
+                    <article class="service-detail-card" data-tags="adulto mayor abuelo abuela higiene diario">
+                        <div class="service-card-header">
+                            <span class="service-card-icon">👵🏽</span>
+                            <h3>Cuidado del Adulto Mayor</h3>
+                        </div>
+                        <p class="service-card-text">
+                            Atención integral, acompañamiento, higiene, movilización, control de signos vitales y apoyo continuo en las actividades diarias.
+                        </p>
+                        <button type="button" class="btn btn-whatsapp service-btn">
+                            💬 Consultar por este Servicio
+                        </button>
+                    </article>
+
+                    <!-- 2. Curaciones y Procedimientos -->
+                    <article class="service-detail-card" data-tags="curacion heridas escaras ulceras postoperatorio puntos">
+                        <div class="service-card-header">
+                            <span class="service-card-icon">🩹</span>
+                            <h3>Curaciones y Procedimientos</h3>
+                        </div>
+                        <p class="service-card-text">
+                            Curación y cuidado especializado de heridas, escaras, úlceras por presión, heridas postoperatorias y retiro de puntos.
+                        </p>
+                        <button type="button" class="btn btn-whatsapp service-btn">
+                            💬 Consultar por este Servicio
+                        </button>
+                    </article>
+
+                    <!-- 3. Inyectables y Sueros -->
+                    <article class="service-detail-card" data-tags="inyectables sueros intramuscular endovenosa via">
+                        <div class="service-card-header">
+                            <span class="service-card-icon">💉</span>
+                            <h3>Inyectables y Sueros</h3>
+                        </div>
+                        <p class="service-card-text">
+                            Administración segura de medicamentos por vía intramuscular, subcutánea y endovenosa, además de colocación de sueros.
+                        </p>
+                        <button type="button" class="btn btn-whatsapp service-btn">
+                            💬 Consultar por este Servicio
+                        </button>
+                    </article>
+
+                    <!-- 4. Administración de Medicamentos -->
+                    <article class="service-detail-card" data-tags="medicamentos pastillas dosis tratamiento farmacos">
+                        <div class="service-card-header">
+                            <span class="service-card-icon">💊</span>
+                            <h3>Administración de Medicamentos</h3>
+                        </div>
+                        <p class="service-card-text">
+                            Organización y administración segura de medicamentos, respetando rigurosamente los horarios, dosis e indicaciones prescritas.
+                        </p>
+                        <button type="button" class="btn btn-whatsapp service-btn">
+                            💬 Consultar por este Servicio
+                        </button>
+                    </article>
+
+                    <!-- 5. Control de Signos Vitales -->
+                    <article class="service-detail-card" data-tags="signos vitales presion arterial glucosa saturacion oxigeno">
+                        <div class="service-card-header">
+                            <span class="service-card-icon">🩺</span>
+                            <h3>Control de Signos Vitales</h3>
+                        </div>
+                        <p class="service-card-text">
+                            Monitoreo continuo de presión arterial, frecuencia cardíaca, temperatura, saturación de oxígeno y descarte de glucosa capilar.
+                        </p>
+                        <button type="button" class="btn btn-whatsapp service-btn">
+                            💬 Consultar por este Servicio
+                        </button>
+                    </article>
+
+                    <!-- 6. Cuidados Postoperatorios -->
+                    <article class="service-detail-card" data-tags="postoperatorio cirugia operacion recuperacion heridas">
+                        <div class="service-card-header">
+                            <span class="service-card-icon">🛏️</span>
+                            <h3>Cuidados Postoperatorios</h3>
+                        </div>
+                        <p class="service-card-text">
+                            Acompañamiento especializado durante la recuperación tras una cirugía, control de heridas, administración de fármacos y vigilancia.
+                        </p>
+                        <button type="button" class="btn btn-whatsapp service-btn">
+                            💬 Consultar por este Servicio
+                        </button>
+                    </article>
+
+                    <!-- 7. Cuidado de Pacientes Dependientes -->
+                    <article class="service-detail-card" data-tags="dependientes postrados movilidad reducida cama">
+                        <div class="service-card-header">
+                            <span class="service-card-icon">🧓</span>
+                            <h3>Cuidado de Pacientes Dependientes</h3>
+                        </div>
+                        <p class="service-card-text">
+                            Atención personalizada para pacientes postrados o con movilidad reducida, priorizando en todo momento su confort e higiene.
+                        </p>
+                        <button type="button" class="btn btn-whatsapp service-btn">
+                            💬 Consultar por este Servicio
+                        </button>
+                    </article>
+
+                    <!-- 8. Higiene y Confort -->
+                    <article class="service-detail-card" data-tags="higiene confort baño cama pañal aseo">
+                        <div class="service-card-header">
+                            <span class="service-card-icon">🧴</span>
+                            <h3>Higiene y Confort</h3>
+                        </div>
+                        <p class="service-card-text">
+                            Baño asistido o en cama, cambio de pañal, higiene personal completa, cuidado hidratante de la piel y bienestar corporal.
+                        </p>
+                        <button type="button" class="btn btn-whatsapp service-btn">
+                            💬 Consultar por este Servicio
+                        </button>
+                    </article>
+
+                    <!-- 9. Canalización de Vía Periférica -->
+                    <article class="service-detail-card" data-tags="via periferica cateter abocath suero">
+                        <div class="service-card-header">
+                            <span class="service-card-icon">🩸</span>
+                            <h3>Canalización de Vía Periférica</h3>
+                        </div>
+                        <p class="service-card-text">
+                            Colocación, mantenimiento y manejo técnico de accesos venosos periféricos para la administración fluida de tratamientos.
+                        </p>
+                        <button type="button" class="btn btn-whatsapp service-btn">
+                            💬 Consultar por este Servicio
+                        </button>
+                    </article>
+
+                    <!-- 10. Manejo de Sondas -->
+                    <article class="service-detail-card" data-tags="sondas vesical foley nasogastrica cateterismo">
+                        <div class="service-card-header">
+                            <span class="service-card-icon">🧪</span>
+                            <h3>Manejo de Sondas</h3>
+                        </div>
+                        <p class="service-card-text">
+                            Colocación, cambio y cuidados de mantenimiento de sondas vesicales y nasogástricas según indicación médica.
+                        </p>
+                        <button type="button" class="btn btn-whatsapp service-btn">
+                            💬 Consultar por este Servicio
+                        </button>
+                    </article>
+
+                    <!-- 11. Nebulizaciones -->
+                    <article class="service-detail-card" data-tags="nebulizacion respiratorio pulmon asma inhalacion">
+                        <div class="service-card-header">
+                            <span class="service-card-icon">🌬️</span>
+                            <h3>Nebulizaciones</h3>
+                        </div>
+                        <p class="service-card-text">
+                            Administración de terapias respiratorias y nebulizaciones prescritas con monitoreo cuidadoso durante el procedimiento.
+                        </p>
+                        <button type="button" class="btn btn-whatsapp service-btn">
+                            💬 Consultar por este Servicio
+                        </button>
+                    </article>
+
+                    <!-- 12. Prevención de Lesiones por Presión -->
+                    <article class="service-detail-card" data-tags="lesiones presion escaras postureo cambios posturales">
+                        <div class="service-card-header">
+                            <span class="service-card-icon">🩺</span>
+                            <h3>Prevención de Lesiones por Presión</h3>
+                        </div>
+                        <p class="service-card-text">
+                            Cuidados preventivos, protocolo de cambios posturales frecuentes, protección de la piel y vigilancia de zonas de riesgo.
+                        </p>
+                        <button type="button" class="btn btn-whatsapp service-btn">
+                            💬 Consultar por este Servicio
+                        </button>
+                    </article>
+
+                    <!-- 13. Atención Infantil -->
+                    <article class="service-detail-card" data-tags="atencion infantil niños bebe pediatria">
+                        <div class="service-card-header">
+                            <span class="service-card-icon">👶</span>
+                            <h3>Atención Infantil</h3>
+                        </div>
+                        <p class="service-card-text">
+                            Cuidados delicados de enfermería para bebés y niños, brindando atención amigable y orientación a los padres.
+                        </p>
+                        <button type="button" class="btn btn-whatsapp service-btn">
+                            💬 Consultar por este Servicio
+                        </button>
+                    </article>
+
+                    <!-- 14. Enfermería a Domicilio 24/7 -->
+                    <article class="service-detail-card" data-tags="domicilio 24/7 guardias turnos noche dia">
+                        <div class="service-card-header">
+                            <span class="service-card-icon">🏠</span>
+                            <h3>Enfermería a Domicilio 24/7</h3>
+                        </div>
+                        <p class="service-card-text">
+                            Cobertura de atención y cuidados de enfermería durante el día o la noche, adaptados a la rutina de cada hogar.
+                        </p>
+                        <button type="button" class="btn btn-whatsapp service-btn">
+                            💬 Consultar por este Servicio
+                        </button>
+                    </article>
+
+                    <!-- 15. Enfermería Profesional -->
+                    <article class="service-detail-card" data-tags="profesional licenciados tecnicos certificado">
+                        <div class="service-card-header">
+                            <span class="service-card-icon">👩‍⚕️</span>
+                            <h3>Enfermería Profesional</h3>
+                        </div>
+                        <p class="service-card-text">
+                            Atención brindada por licenciados y técnicos en enfermería titulados y calificados con calidez humana.
+                        </p>
+                        <button type="button" class="btn btn-whatsapp service-btn">
+                            💬 Consultar por este Servicio
+                        </button>
+                    </article>
+
+                    <!-- 16. Orientación al Familiar y Cuidador -->
+                    <article class="service-detail-card" data-tags="orientacion familiar cuidador capacitacion">
+                        <div class="service-card-header">
+                            <span class="service-card-icon">👨‍👩‍👧</span>
+                            <h3>Orientación al Familiar y Cuidador</h3>
+                        </div>
+                        <p class="service-card-text">
+                            Capacitación, educación y acompañamiento a la familia para reforzar los cuidados cotidianos del paciente en casa.
+                        </p>
+                        <button type="button" class="btn btn-whatsapp service-btn">
+                            💬 Consultar por este Servicio
+                        </button>
+                    </article>
+
+                </div>
+
+                <!-- Mensaje sin resultados -->
+                <div id="noResultsMessage" class="no-results-msg" style="display: none;">
+                    <p>No encontramos ningún servicio que coincida con tu búsqueda.</p>
+                    <button type="button" class="btn btn-secondary" id="clearSearchBtn">Ver todos los servicios</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="cta-section">
+            <div class="section-container">
+                <h2>¿Necesitas un plan de cuidado personalizado?</h2>
+                <p>Escríbenos directamente y coordinamos la atención que tu ser querido necesita.</p>
+                <button type="button" class="btn btn-whatsapp" id="openWsModalCta">
+                    Contactar por WhatsApp Ahora
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- VENTANA MODAL SELECCIÓN DE WHATSAPP -->
+    <div class="ws-modal-overlay" id="wsModal">
+        <div class="ws-modal-card">
+            <button class="ws-modal-close" id="closeWsModal">&times;</button>
+            <h3 class="ws-modal-title">Selecciona un canal de atención</h3>
+            <p class="ws-modal-sub">Estamos listos para atenderte por cualquiera de nuestras líneas:</p>
+            
+            <div class="ws-modal-options">
+                <a href="https://wa.me/51926476784?text=Hola,%20quisiera%20consultar%20sobre%20sus%20servicios%20de%20enfermer%C3%ADa." 
+                   target="_blank" 
+                   class="ws-option-btn">
+                   💬 Atencion directa y consultas
+                </a>
+                <a href="https://wa.me/51933791007?text=Hola,%20quisiera%20solicitar%20coordinaci%C3%B3n%20de%20servicios." 
+                   target="_blank" 
+                   class="ws-option-btn">
+                   📋 Coordinación de servicios
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer-container">
+        <p>&copy; 2026 Díaz De Salud - Enfermería a Domicilio. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JS Y BUSCADOR -->
+    <script src="script.js"></script>
+</body>
+</html>
